@@ -1,8 +1,18 @@
 import './App.css';
+import React, {useState} from "react";
 
 function App() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(prevCount => prevCount + 1)
+  }
+  
   return (
-    <h1>Hello World</h1>
+    <div>
+      <h1>{count}</h1>
+      <button onClick={handleClick}>Increment</button>
+    </div>
   );
 }
 
