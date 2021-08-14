@@ -10,7 +10,7 @@ function App() {
   
   return (
     <div>
-      <h1>{count}</h1>
+      <h1 className="number">{count}</h1>
       <button onClick={handleClick}>Increment</button>
     </div>
   );
